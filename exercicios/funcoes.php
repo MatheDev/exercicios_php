@@ -1,6 +1,7 @@
 <?php 
 
 /*
+    Exercicío 01
     Crie uma função que simule uma entrada em uma balada
     Onde se a pessoa for maior de 18 ela pode entrar na balada
     Se ela for menor e idade e tiver acompanhada com alguém maior de 18 pode entrar
