@@ -45,8 +45,9 @@ somar_opcional2(10, 90);
  * Forçar que o parâmetro seja de um tipo específico
  * Se colocar um número int ele aceita, pois o int é um subtipo de float
  * Se colocar uma string o php converte mas pode dar um aviso pois é tipagem fraca
+ * 
+ * @param float $idade valor da idade
  */
-
 function somar_tipo_param(float $idade){
     return "Você tem $idade anos \n";
 }
@@ -82,6 +83,19 @@ function param_nomeados($n1, $n2){
 }
 // note que quando chamo a função eu passo o parâmetro fora de ordem, mas indicando o valor correspondente ao parâmetro
 echo param_nomeados(n2: 15, n1: 45);
+
+
+/**
+ * Para forçar que o retorno de uma função seja de um tipo específico,
+ * basta definir o tipo de retorno após os parênteses dos parâmetros,
+ * usando dois pontos (:).
+ *
+ * Exemplo: Esta função espera dois números float e retorna uma string.
+ */
+
+function somar_return_especifico(float $n1, float $n2): string {
+    return (string)($n1 + $n2); // conversão necessária
+}
 
 // EXERCICÍOS 
 
