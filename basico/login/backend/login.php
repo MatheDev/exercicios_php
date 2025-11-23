@@ -10,6 +10,9 @@ if (!empty($_POST['user'] && !empty($_POST['password']))) {
         $_SESSION['user'] = $user;
         $_SESSION['password'] = $password;
 
+        // definindo o tema escolhido
+        setcookie('tema', htmlspecialchars($_POST['tema']));
+
         header('Location: ../welcome.php');
     } else {
         echo 'Usuário e/ou senha estão incorretos!';
